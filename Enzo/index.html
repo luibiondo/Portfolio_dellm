@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enzo Casares - Data Engineer</title>
+  <meta name="description" content="Portfolio of Enzo Casares, a Data Engineer specializing in scalable data pipelines, cloud infrastructure, and real-time streaming." />
+  <link rel="stylesheet" href="/Enzo/style.css" />
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- ── Sidebar ──────────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar__avatar-wrap">
+      <img src="/Enzo/enzo-casares.png" alt="Photo of Enzo Casares" class="sidebar__avatar" />
+    </div>
+    <h1 class="sidebar__name">Enzo Casares</h1>
+    <span class="sidebar__title">Data Engineer</span>
+
+    <div class="sidebar__divider"></div>
+
+    <ul class="sidebar__info-list">
+      <li class="sidebar__info-item">
+        <span class="sidebar__info-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </span>
+        <span>
+          <span class="sidebar__info-label">Email</span><br/>
+          <span class="sidebar__info-value">enzo.casares@example.com</span>
+        </span>
+      </li>
+      <li class="sidebar__info-item">
+        <span class="sidebar__info-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span>
+          <span class="sidebar__info-label">Phone</span><br/>
+          <span class="sidebar__info-value">+54 (11) 5678-9012</span>
+        </span>
+      </li>
+      <li class="sidebar__info-item">
+        <span class="sidebar__info-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </span>
+        <span>
+          <span class="sidebar__info-label">Birthday</span><br/>
+          <span class="sidebar__info-value">March 22, 1998</span>
+        </span>
+      </li>
+      <li class="sidebar__info-item">
+        <span class="sidebar__info-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <span>
+          <span class="sidebar__info-label">Location</span><br/>
+          <span class="sidebar__info-value">Buenos Aires, Argentina</span>
+        </span>
+      </li>
+    </ul>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__social">
+      <a href="https://github.com/enzocasares" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <a href="https://twitter.com/enzocasares" aria-label="Twitter">
+        <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+      </a>
+      <a href="https://instagram.com/enzocasares" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ── Main Content ─────────────────────────────── -->
+  <main class="main">
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Section navigation">
+      <a href="#about" class="nav__link nav__link--active" data-section="about">About</a>
+      <a href="#resume" class="nav__link" data-section="resume">Resume</a>
+      <a href="#portfolio" class="nav__link" data-section="portfolio">Portfolio</a>
+      <a href="#blog" class="nav__link" data-section="blog">Blog</a>
+      <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+    </nav>
+
+    <!-- ── About Section ──────────────────────────── -->
+    <section id="about" class="section section--active">
+      <h2 class="section__title">About Me</h2>
+      <p class="section__subtitle">Turning raw data into trusted, actionable datasets</p>
+
+      <p class="about__text">
+        I'm a Data Engineer from Buenos Aires, Argentina, specializing in building scalable data pipelines, cloud data infrastructure, and real-time streaming systems. I enjoy transforming raw, messy data into clean, reliable datasets that power business decisions.
+      </p>
+      <p class="about__text">
+        My focus is designing and implementing robust ETL/ELT pipelines, data warehouses, and data lake architectures that handle terabytes of data efficiently. I work extensively with tools like Apache Spark, Apache Kafka, dbt, Airflow, and cloud platforms such as AWS, GCP, and Snowflake. I'm passionate about data quality, observability, and building systems that teams can trust.
+      </p>
+
+      <h3 class="about__services-heading">What I Do</h3>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <!-- Pipeline icon -->
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4 class="service-card__title">ETL/ELT Pipelines</h4>
+          <p class="service-card__desc">Designing and building scalable data pipelines with Apache Spark, dbt, and Airflow for batch and streaming workloads.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <!-- Streaming icon -->
+            <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h4 class="service-card__title">Real-Time Streaming</h4>
+          <p class="service-card__desc">Implementing event-driven architectures with Apache Kafka, Flink, and cloud-native streaming services.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <!-- Cloud icon -->
+            <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <h4 class="service-card__title">Cloud Data Infrastructure</h4>
+          <p class="service-card__desc">Architecting data platforms on AWS, GCP, and Snowflake with infrastructure-as-code and cost optimization.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <!-- Database icon -->
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h4 class="service-card__title">Data Modeling &amp; Warehousing</h4>
+          <p class="service-card__desc">Building dimensional models, star schemas, and modern data warehouse architectures for analytics at scale.</p>
+        </div>
+
+      </div>
+
+      <h3 class="testimonials-heading">Testimonials</h3>
+      <div class="testimonials-scroll">
+        <div class="testimonials-track">
+          <!-- Set 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-man.jpg" alt="Martin Garcia" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Martin Garcia</span>
+            </div>
+            <p class="testimonial-card__text">Enzo redesigned our entire data pipeline architecture. Ingestion times dropped by 70% and our analysts finally trust the data. Exceptional engineering work.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-woman-diverse.png" alt="Laura Fernandez" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Laura Fernandez</span>
+            </div>
+            <p class="testimonial-card__text">Enzo built our real-time streaming platform from scratch. His deep knowledge of Kafka and Spark made what seemed impossible completely seamless.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-man.jpg" alt="Carlos Mendez" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Carlos Mendez</span>
+            </div>
+            <p class="testimonial-card__text">Working with Enzo on our data warehouse migration was a game-changer. He delivered on time, with excellent documentation and zero data loss.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-woman-diverse.png" alt="Sofia Ramirez" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Sofia Ramirez</span>
+            </div>
+            <p class="testimonial-card__text">Enzo is the data engineer every team needs. He automated our entire data quality monitoring and saved us countless hours of manual validation.</p>
+          </div>
+          <!-- Set 2 (duplicate for infinite scroll) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-man.jpg" alt="Martin Garcia" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Martin Garcia</span>
+            </div>
+            <p class="testimonial-card__text">Enzo redesigned our entire data pipeline architecture. Ingestion times dropped by 70% and our analysts finally trust the data. Exceptional engineering work.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-woman-diverse.png" alt="Laura Fernandez" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Laura Fernandez</span>
+            </div>
+            <p class="testimonial-card__text">Enzo built our real-time streaming platform from scratch. His deep knowledge of Kafka and Spark made what seemed impossible completely seamless.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-man.jpg" alt="Carlos Mendez" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Carlos Mendez</span>
+            </div>
+            <p class="testimonial-card__text">Working with Enzo on our data warehouse migration was a game-changer. He delivered on time, with excellent documentation and zero data loss.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <img src="/professional-woman-diverse.png" alt="Sofia Ramirez" class="testimonial-card__avatar" />
+              <span class="testimonial-card__name">Sofia Ramirez</span>
+            </div>
+            <p class="testimonial-card__text">Enzo is the data engineer every team needs. He automated our entire data quality monitoring and saved us countless hours of manual validation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Resume Section ─────────────────────────── -->
+    <section id="resume" class="section">
+      <h2 class="section__title">Resume</h2>
+      <p class="section__subtitle">Education, experience, and technical skills</p>
+
+      <div class="resume-columns">
+        <div>
+          <h3 class="resume-col__title">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+            Education
+          </h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <h4 class="timeline__title">Universidad de Buenos Aires (UBA)</h4>
+              <span class="timeline__period">2016 &#8212; 2021</span>
+              <p class="timeline__desc">Bachelor of Science in Computer Science with a specialization in distributed systems, databases, and data-intensive applications.</p>
+            </div>
+            <div class="timeline__item">
+              <h4 class="timeline__title">Data Engineering with Google Cloud Professional Certificate</h4>
+              <span class="timeline__period">2021 &#8212; 2022</span>
+              <p class="timeline__desc">Professional certification covering BigQuery, Dataflow, Pub/Sub, Cloud Composer, and data pipeline design on GCP.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="resume-col__title">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            Experience
+          </h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <h4 class="timeline__title">Senior Data Engineer</h4>
+              <span class="timeline__period">2023 &#8212; Present</span>
+              <p class="timeline__desc">Leading the design and implementation of enterprise data platforms processing 5TB+ daily. Building real-time streaming pipelines with Kafka and Flink, managing data warehouse architecture on Snowflake, and mentoring junior engineers.</p>
+            </div>
+            <div class="timeline__item">
+              <h4 class="timeline__title">Data Engineer</h4>
+              <span class="timeline__period">2021 &#8212; 2023</span>
+              <p class="timeline__desc">Built and maintained ETL/ELT pipelines using Apache Spark and dbt. Migrated legacy batch jobs to Airflow, reducing processing time by 60%. Implemented data quality frameworks and monitoring dashboards.</p>
+            </div>
+            <div class="timeline__item">
+              <h4 class="timeline__title">Junior Data Engineer</h4>
+              <span class="timeline__period">2020 &#8212; 2021</span>
+              <p class="timeline__desc">Developed Python-based data ingestion scripts, maintained PostgreSQL databases, and assisted in building the company's first data lake on AWS S3 with Glue and Athena.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="skills-heading">My Skills</h3>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill__header">
+            <span class="skill__name">Python / SQL</span>
+            <span class="skill__percent">95%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__header">
+            <span class="skill__name">Apache Spark / Kafka</span>
+            <span class="skill__percent">90%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__header">
+            <span class="skill__name">Cloud Platforms (AWS, GCP)</span>
+            <span class="skill__percent">88%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" style="width:88%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__header">
+            <span class="skill__name">Data Modeling / Warehousing</span>
+            <span class="skill__percent">85%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__header">
+            <span class="skill__name">dbt / Airflow</span>
+            <span class="skill__percent">92%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" style="width:92%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__header">
+            <span class="skill__name">Docker / Kubernetes</span>
+            <span class="skill__percent">78%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill" style="width:78%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Portfolio Section ──────────────────────── -->
+    <section id="portfolio" class="section">
+      <h2 class="section__title">Portfolio</h2>
+      <p class="section__subtitle">Data engineering projects and platforms</p>
+
+      <div class="filter-bar">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pipelines">Pipelines</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="pipelines">
+          <img src="/etl-pipeline-dashboard.jpg" alt="ETL Pipeline Framework dashboard" class="project-card__img" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">ETL Pipeline Framework</h3>
+            <p class="project-card__desc">Scalable ETL framework processing 5TB+ daily with Apache Spark and Airflow orchestration</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Apache Spark</span>
+              <span class="project-card__tag">Airflow</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://example.com" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/enzocasares/etl-framework" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="currentColor" stroke="none"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="infrastructure">
+          <img src="/data-warehouse-schema.jpg" alt="Data Warehouse Architecture diagram" class="project-card__img" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Data Warehouse Architecture</h3>
+            <p class="project-card__desc">Snowflake data warehouse with star schema design and dbt transformation layer</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Snowflake</span>
+              <span class="project-card__tag">dbt</span>
+              <span class="project-card__tag">SQL</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://example.com" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/enzocasares/data-warehouse" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="currentColor" stroke="none"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="pipelines">
+          <img src="/real-time-streaming.jpg" alt="Real-Time Streaming Platform monitoring" class="project-card__img" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Real-Time Streaming Platform</h3>
+            <p class="project-card__desc">Event-driven streaming platform with Kafka and Flink for sub-second data processing</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Apache Kafka</span>
+              <span class="project-card__tag">Flink</span>
+              <span class="project-card__tag">Docker</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://example.com" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/enzocasares/streaming-platform" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="currentColor" stroke="none"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="infrastructure">
+          <img src="/data-lake-architecture.jpg" alt="Cloud Data Lake architecture" class="project-card__img" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Cloud Data Lake</h3>
+            <p class="project-card__desc">Multi-layered data lake on AWS S3 with bronze/silver/gold architecture using Delta Lake</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">AWS S3</span>
+              <span class="project-card__tag">Delta Lake</span>
+              <span class="project-card__tag">Glue</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://example.com" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/enzocasares/data-lake" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="currentColor" stroke="none"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="analytics">
+          <img src="/data-quality-monitoring.jpg" alt="Data Quality Monitoring dashboard" class="project-card__img" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Data Quality Monitoring</h3>
+            <p class="project-card__desc">Automated data quality framework with anomaly detection and alerting</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Great Expectations</span>
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Grafana</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://example.com" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/enzocasares/data-quality" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="currentColor" stroke="none"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="analytics">
+          <img src="/analytics-platform.jpg" alt="Analytics Platform dashboard" class="project-card__img" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Analytics Platform</h3>
+            <p class="project-card__desc">Self-service BI platform with curated datasets and automated reporting pipelines</p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Metabase</span>
+              <span class="project-card__tag">dbt</span>
+              <span class="project-card__tag">BigQuery</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://example.com" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/enzocasares/analytics-platform" class="project-card__link">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" fill="currentColor" stroke="none"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── Blog Section ───────────────────────────── -->
+    <section id="blog" class="section">
+      <h2 class="section__title">Blog</h2>
+      <p class="section__subtitle">Thoughts on data engineering, pipelines, and infrastructure</p>
+
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <img src="/blog-data-pipelines.jpg" alt="Data pipelines abstract illustration" class="blog-card__img" />
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Pipelines</span>
+              <span class="blog-card__date">Jan 20, 2026</span>
+            </div>
+            <h3 class="blog-card__title">Building Idempotent Data Pipelines with Apache Spark</h3>
+            <p class="blog-card__excerpt">How to design fault-tolerant, idempotent ETL pipelines that gracefully handle retries and failures.</p>
+            <div class="blog-card__tags">
+              <span class="blog-card__tag">Spark</span>
+              <span class="blog-card__tag">ETL</span>
+              <span class="blog-card__tag">Best Practices</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="/blog-data-modeling.jpg" alt="Data modeling abstract illustration" class="blog-card__img" />
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Modeling</span>
+              <span class="blog-card__date">Jan 8, 2026</span>
+            </div>
+            <h3 class="blog-card__title">Data Warehouse Modeling: Star vs Snowflake Schema</h3>
+            <p class="blog-card__excerpt">A practical guide to choosing the right dimensional modeling approach for your analytics workloads.</p>
+            <div class="blog-card__tags">
+              <span class="blog-card__tag">Data Modeling</span>
+              <span class="blog-card__tag">Snowflake</span>
+              <span class="blog-card__tag">dbt</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="/blog-cloud-data.jpg" alt="Cloud data infrastructure illustration" class="blog-card__img" />
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Streaming</span>
+              <span class="blog-card__date">Dec 15, 2025</span>
+            </div>
+            <h3 class="blog-card__title">Real-Time Streaming with Kafka and Flink</h3>
+            <p class="blog-card__excerpt">End-to-end guide to building low-latency streaming pipelines for event-driven architectures.</p>
+            <div class="blog-card__tags">
+              <span class="blog-card__tag">Kafka</span>
+              <span class="blog-card__tag">Flink</span>
+              <span class="blog-card__tag">Streaming</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="/blog-data-pipelines.jpg" alt="Data quality monitoring illustration" class="blog-card__img" />
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Quality</span>
+              <span class="blog-card__date">Nov 28, 2025</span>
+            </div>
+            <h3 class="blog-card__title">Data Quality at Scale with Great Expectations</h3>
+            <p class="blog-card__excerpt">Implementing automated data validation and monitoring to catch issues before they reach production.</p>
+            <div class="blog-card__tags">
+              <span class="blog-card__tag">Data Quality</span>
+              <span class="blog-card__tag">Python</span>
+              <span class="blog-card__tag">Testing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="/blog-cloud-data.jpg" alt="Modern data stack illustration" class="blog-card__img" />
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Infrastructure</span>
+              <span class="blog-card__date">Nov 12, 2025</span>
+            </div>
+            <h3 class="blog-card__title">Migrating to a Modern Data Stack: Lessons Learned</h3>
+            <p class="blog-card__excerpt">Key takeaways from migrating a legacy data warehouse to Snowflake, dbt, and Fivetran.</p>
+            <div class="blog-card__tags">
+              <span class="blog-card__tag">Migration</span>
+              <span class="blog-card__tag">Snowflake</span>
+              <span class="blog-card__tag">dbt</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="/blog-data-modeling.jpg" alt="Apache Airflow illustration" class="blog-card__img" />
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Pipelines</span>
+              <span class="blog-card__date">Oct 30, 2025</span>
+            </div>
+            <h3 class="blog-card__title">Orchestrating Complex Workflows with Apache Airflow</h3>
+            <p class="blog-card__excerpt">Best practices for designing maintainable DAGs and managing dependencies in Airflow.</p>
+            <div class="blog-card__tags">
+              <span class="blog-card__tag">Airflow</span>
+              <span class="blog-card__tag">Orchestration</span>
+              <span class="blog-card__tag">Python</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── Contact Section ────────────────────────── -->
+    <section id="contact" class="section">
+      <h2 class="section__title">Contact</h2>
+      <p class="section__subtitle">Get in touch for data engineering projects and collaborations</p>
+
+      <div class="contact-info-grid">
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-card__label">Email</div>
+            <div class="contact-info-card__value">enzo.casares@example.com</div>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-card__label">Phone</div>
+            <div class="contact-info-card__value">+54 (11) 5678-9012</div>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-card__label">Location</div>
+            <div class="contact-info-card__value">Buenos Aires, Argentina</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="contact-form__row">
+          <input type="text" class="contact-form__input" placeholder="Full Name" required />
+          <input type="email" class="contact-form__input" placeholder="Email Address" required />
+        </div>
+        <input type="text" class="contact-form__input" placeholder="Subject" />
+        <textarea class="contact-form__textarea" placeholder="Your Message" required></textarea>
+        <button type="submit" class="contact-form__btn">Send Message</button>
+      </form>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105080.71768492638!2d-58.50757839316409!3d-34.61566808498898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e3411b4e8!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sar!4v1234567890123!5m2!1sen!2sar"
+          title="Map showing Buenos Aires, Argentina"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Minimal inline script for tab switching & filter (no framework) -->
+<script>
+  // Tab navigation
+  document.querySelectorAll('.nav__link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.nav__link').forEach(function(l) { l.classList.remove('nav__link--active'); });
+      document.querySelectorAll('.section').forEach(function(s) { s.classList.remove('section--active'); });
+      this.classList.add('nav__link--active');
+      var target = this.getAttribute('data-section');
+      document.getElementById(target).classList.add('section--active');
+    });
+  });
+
+  // Portfolio filter
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('filter-btn--active'); });
+      this.classList.add('filter-btn--active');
+      var filter = this.getAttribute('data-filter');
+      document.querySelectorAll('.project-card').forEach(function(card) {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
